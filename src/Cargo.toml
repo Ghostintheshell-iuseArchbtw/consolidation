@@ -1,0 +1,15 @@
+[package]
+name = "sysdisablerV2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.66"
+log = "0.4.16"
+env_logger = "0.11.6"
+rand = "0.8.5"
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "z"
